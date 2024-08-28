@@ -1,6 +1,6 @@
 <h2>Description</h2>
-This was a major project I did during undergrad. It was the final test to get into one of the distinguished research labs in my college (Physics). Essentially, I was an applicant.<br/>
-(SNIPPET OF PROBLEM) <br/>
+This was a major project I did during undergrad. It was the final test to get into one of the distinguished research labs in my college (Physics). Essentially, I was an applicant to that research lab.<br/>
+![Problem Statement](/Py-Pathfinder/Py_Maze_Problem_Statement.png) <br/>
 It was all fine and dandy until I saw we were limited to using NumPy and Matplotlib. They were weaning us off specialized libraries to assess our core programming know-how and problem-solving capabilities. Fair enough.
 (SNIPPET OF MAZE)
 <h2>Programming Proper</h2>
