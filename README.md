@@ -8,11 +8,15 @@ This was a major project I did during undergrad. It was the final test to get in
 It was all fine and dandy until I saw we were limited to using NumPy and Matplotlib. I believe they were weaning us from specialized libraries to assess our core programming know-how and problem-solving capabilities.
 
 <h2>Programming Proper (WIP)</h2>
+The instructions were clear. I needed to
 
+- load the image as an array of 0s and 1s
+- find at least two paths from start (top-left) to end (bottom-right)
+- output each path as a list of coordinates
+ 
 <p align="center">
 Launch the utility: <br/>
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
 <br />
 Select the disk:  <br/>
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
