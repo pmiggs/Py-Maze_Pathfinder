@@ -5,7 +5,7 @@ This was a major project I did during undergrad. It was the final test to get in
 </kbd>
 <br/>
 <br/>
-It was all fine and dandy until I saw we were limited to using NumPy and Matplotlib. They were weaning us from specialized libraries to assess our core programming know-how and problem-solving capabilities... I think.
+It was all fine and dandy until I saw we were limited to using NumPy and Matplotlib. I believe they were weaning us from specialized libraries to assess our core programming know-how and problem-solving capabilities.
 
 <h2>Programming Proper</h2>
 
