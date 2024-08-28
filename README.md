@@ -1,11 +1,11 @@
 <h2>Description</h2>
-This was a major project I did during undergrad. It was the final test to get into one of the distinguished research labs in my college (Physics). Essentially, I was an applicant to that research lab.<br/>
+This was a major project I did during my undergraduate. It was the final test to get into one of the known research labs in my college (Physics). Essentially, I was an applicant to that research lab.<br/>
 <kbd>
 <img src="Py_Maze_Problem_Statement.png" width="410" height="410">
 </kbd>
 <br/>
 <br/>
-It was all fine and dandy until I saw we were limited to using NumPy and Matplotlib. I believe they were weaning us from specialized libraries to assess our core programming know-how and problem-solving capabilities.
+It was all fine and dandy until I saw we were limited to using NumPy and Matplotlib. I believe they were preventing us from specialized libraries to assess our core programming know-how and problem-solving capabilities.
 
 <h2>Programming Proper (WIP)</h2>
 The instructions were clear. I needed to
