@@ -1,11 +1,21 @@
 <h2>Description</h2>
 This was a major project I did during undergrad. It was the final test to get into one of the distinguished research labs in my college (Physics). Essentially, I was an applicant to that research lab.<br/>
+<kbd>
+<img src="Py_Maze_Problem_Statement.png" width="450" height="80">
+</kbd>
+<br/>
+<br/>
+It was all fine and dandy until I saw we were limited to using NumPy and Matplotlib. They were weaning us from specialized libraries to assess our core programming know-how and problem-solving capabilities. Fair enough.
 
-![Problem Statement](Py_Maze_Problem_Statement.png)
+<table>
+<tr><th>Small Maze</th><th>Big Maze</th></tr>
+<tr><td>
 
-It was all fine and dandy until I saw we were limited to using NumPy and Matplotlib. They were weaning us off specialized libraries to assess our core programming know-how and problem-solving capabilities. Fair enough.
-(SNIPPET OF MAZE)
+ ![small_maze](Challenge_small.png)
+</td><td>
 
+ ![big_maze](Challenge_big.png)
+</td></tr> </table>
 <h2>Programming Proper</h2>
 
 <p align="center">
