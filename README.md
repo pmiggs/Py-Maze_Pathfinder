@@ -1,7 +1,7 @@
 <h2>Description</h2>
 This was a major project I did during undergrad. It was the final test to get into one of the distinguished research labs in my college (Physics). Essentially, I was an applicant to that research lab.<br/>
 <kbd>
-<img src="Py_Maze_Problem_Statement.png" width="380" height="350">
+<img src="Py_Maze_Problem_Statement.png" width="380" height="370">
 </kbd>
 <br/>
 <br/>
