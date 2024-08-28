@@ -1,19 +1,20 @@
 <h2>Description</h2>
-This was a major project I did during my undergraduate. It was the final test to get into one of the known research labs in my college (Physics). Essentially, I was an applicant to that research lab.<br/>
+This was a major project I did during my undergraduate. It was the final test to get into one of the known research labs in my college (Physics). Essentially, I was an applicant to that research lab and the problem reads as follows:<br/>
 <kbd>
 <img src="Py_Maze_Problem_Statement.png" width="410" height="410">
 </kbd>
 <br/>
 <br/>
-It was all fine and dandy until I saw we were limited to using NumPy and Matplotlib. I believe they were preventing us from specialized libraries to assess our core programming know-how and problem-solving capabilities.
+It was all fine and dandy until I saw we were limited to using NumPy and Matplotlib. They were preventing us from using specialized libraries likely to assess our core programming know-how and problem-solving capabilities.
 
 <h2>Programming Proper (WIP)</h2>
-The instructions were clear. I needed to
+The instructions were clear:
 
-- load the image as an array of 0s and 1s
+- load the image as an array of 0s (walls) and 1s (spaces)
 - find at least two paths from start (top-left) to end (bottom-right)
 - output each path as a list of coordinates
- 
+
+
 <p align="center">
 Launch the utility: <br/>
 <img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
