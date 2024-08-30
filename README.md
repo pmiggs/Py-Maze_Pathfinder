@@ -13,3 +13,7 @@ The procedure I formulated in my head was as follows. In reverse engineering fas
 <img src="Methodology.png" width="410" height="130">
 
 In hindsight, this would have been much easier and efficient if we were taught the algorithms for these problems, e.g. depth-first search, breadth-first search, A* search, etc. However, not knowing these things also served as a medium for us to lay bare our own logic or approach, i.e. our own "algorithm".
+
+Starting with the packages to be used for the entire code:
+![code_1](Code_P1.png)
+
