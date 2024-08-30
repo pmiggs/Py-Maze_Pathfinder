@@ -9,7 +9,7 @@ It was all fine and dandy until I saw we were limited to using NumPy and Matplot
 
 <h2>Programming Proper (WIP)</h2>
 The procedure I formulated in my head was as follows. In reverse engineering fashion,
-![method](Methodology.png)
 
+![method](Methodology.png)
 
 In hindsight, this would have been much easier and efficient if we were taught the algorithms for these problems, e.g. depth-first search, breadth-first search, A* search, etc. However, not knowing these things also served as a medium for us to lay bare our own logic or approach, i.e. our own "algorithm".
