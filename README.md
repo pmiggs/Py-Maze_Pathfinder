@@ -1,5 +1,5 @@
 <h2>Description</h2>
-This was a major project I did during my undergraduate. It was the final test to get into one of the known research labs in my college (Physics). Essentially, I was an applicant to that research lab and the problem reads as follows:<br/>
+This was a major project I did during my undergraduate. It was the final test to get into one of the prominent research labs in my college (Physics). Essentially, I was an applicant to that research lab and the problem reads as follows:<br/>
 <kbd>
 <img src="Py_Maze_Problem_Statement.png" width="410" height="410">
 </kbd>
@@ -14,41 +14,9 @@ The instructions were clear:
 - find at least two paths from start (top-left) to end (bottom-right)
 - output each path as a list of coordinates
 
+But exactly how did I go about it? I had to use an algorithm. For context, we had programming courses in our curriculum so I wasn't a complete stranger to approaching this project. To name a few, there's the A* Search, Breadth-First Search (BFS), Depth-First Search, etc. that may be used for such maze-solving problems. At the time, I found BFS the most straight-forward and _subjectively_ more systematic so I decided to implement that. I wouldn't bore you with an elaboration, so here a GIF from Wikipedia describing BFS:
+(INSERT GIF OF BFS)
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+Thus, the gameplan was to set up functions (lots of 'em) to 
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+We need to define functions... lots of functions. A function to load the maze (as binary), a function to check whether a move is 
