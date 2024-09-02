@@ -30,9 +30,9 @@ def load_maze(maze_path):
     for i in range(img.shape[0]):        # '0' = black color of the image
         for j in range(img.shape[1]):    # '1' = white color of the image
             if img[i,j] == 0:
-                maze[i,j] = 1            # this converts all black into '1' as in the walls
+                maze[i,j] = 1            # this assigns all black as '1' for our array, i.e. walls
             else:
-                maze[i,j] = 0            # this converts all else (white) into '0' as in the spaces
+                maze[i,j] = 0            # this assigns all else (white) as '0', i.e. spaces
     return maze
 ```
 
