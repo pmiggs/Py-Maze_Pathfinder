@@ -16,11 +16,25 @@ In hindsight, this would have been much easier and efficient if we were taught a
 
 Starting out with the packages to be used for the entire code:
 
-![code_1](Code_P1.png)
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+```
 
 First is to write a code that uploads the image into the program and convert it into binary. Thankfully, the image was given in black and white so there was no need to recolor or preprocess.
 
-![Code_2](Code_P2.png)
+```python
+def load_maze(maze_path):
+    img = plt.imread(maze_path)
+    maze = np.zeros_like(img, dtype=int) # this initializes an empty array for our binary maze
+    for i in range(img.shape[0]):        # '0' = black color of the image
+        for j in range(img.shape[1]):    # '1' = white color of the image
+            if img[i,j] == 0:
+                maze[i,j] = 1            # this converts all black into '1' as in the walls
+            else:
+                maze[i,j] = 0            # this converts all else (white) into '0' as in the spaces
+    return maze
+```
 
 This is definitely a "brute force" way of coding, where I used nested loops to iterate through each pixel in the image. For each pixel, the code checks if the value is 0 (black). If it is, it sets the corresponding element in the maze array to 1 (a wall). Otherwise, it sets it to 0 (a path).
 
