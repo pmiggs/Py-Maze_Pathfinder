@@ -24,7 +24,7 @@ First is to write a code that uploads the image into the program and convert it 
 
 This is definitely a "brute force" way of coding, where I used nested loops to iterate through each pixel in the image. For each pixel, the code checks if the value is 0 (black). If it is, it sets the corresponding element in the maze array to 1 (a wall). Otherwise, it sets it to 0 (a path).
 
-Calling out the maze function, it now looks like this:
+Calling out the maze function, it now looks like this (albeit truncated):
 
 <img src="Binary Maze Array.png" width="200" height="200">
 
