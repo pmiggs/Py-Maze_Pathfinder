@@ -28,7 +28,7 @@ Calling out the maze function, it now looks like this (albeit truncated):
 
 <img src="Binary Maze Array.png" width="150" height="150">
 
-Next is the meat of the problem: solving for the maze. Two things come in mind: I need to write a code that will "walk" through the maze and, prior to that, check its neighboring cells if it's even a walkable path.
+Next is the meat of the problem: solving for the maze. Two things come to mind: I need to write a code that will "walk" through the maze and, prior to that, check its neighboring cells if it's even a walkable path.
 
 Since this is a 2D maze, checking for surrounding paths is also done in 2D (**x**'th row and **y**'th column). And knowing whether or not a path is walkable means
 
