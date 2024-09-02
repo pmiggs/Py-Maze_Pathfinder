@@ -52,5 +52,18 @@ Since this is a 2D maze, checking for surrounding paths is also done in 2D (**x*
 
 Thus the code is written as follows:
 
-![Code_3](Code_P3.png)
+```python
+def walkability(maze, walkable, x, y):
+    if maze[x, y] == 1:             # this checks if move hits a wall
+        return False
+    if x < 0 or x >= maze.shape[0]: # this checks if move is within vertical bounds
+        return False
+    if y < 0 or y >= maze.shape[1]: # this checks if move is within vertical bounds
+        return False
+    if visited[x, y]:               # this checks if move has been done
+        return False
+    return True                     # if conditions are met then path is walkable
+```
+
+Here
 
