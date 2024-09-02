@@ -24,8 +24,8 @@ import matplotlib.pyplot as plt
 First is to write a code that uploads the image into the program and convert it into binary. Thankfully, the image was given in black and white so there was no need to recolor or preprocess.
 
 ```python
-def load_maze(maze_path):
-    img = plt.imread(maze_path)
+def load_maze(maze_file_path):
+    img = plt.imread(maze_file_path)
     maze = np.zeros_like(img, dtype=int) # this initializes an empty array for our binary maze
     for i in range(img.shape[0]):        # '0' = black color of the image
         for j in range(img.shape[1]):    # '1' = white color of the image
