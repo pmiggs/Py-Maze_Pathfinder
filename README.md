@@ -26,7 +26,7 @@ This is definitely a "brute force" way of coding, where I used nested loops to i
 
 Calling out the maze function, it now looks like this (albeit truncated):
 
-<img src="Binary Maze Array.png" width="200" height="200">
+<img src="Binary Maze Array.png" width="150" height="150">
 
 Next is the meat of the problem: solving for the maze. Two things come in mind: I need to write a code that will "walk" through the maze and, prior to that, check its neighboring cells if it's even a walkable path.
 
