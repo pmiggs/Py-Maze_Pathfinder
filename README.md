@@ -36,15 +36,15 @@ def load_maze(maze_file_path):
     return maze
 ```
 
-This is definitely a "brute force" way of coding, where I used nested loops to iterate through each pixel in the image. For each pixel, the code checks if the value is 0 (black). If it is, it sets the corresponding element in the maze array to 1 (a wall). Otherwise, it sets it to 0 (a path).
+This is definitely a "brute force" way of coding, where I used nested loops to iterate through each pixel in the image. For each pixel, the code checks if the value is black or white. I then programmed it to follow the convention suggested in the problem where 1 will be the walls and 0 will be the path.
 
-Calling out the maze function, it now looks like this (albeit truncated):
+Calling out the maze function now, it looks like so (albeit truncated):
 
 <img src="Binary Maze Array.png" width="150" height="150">
 
 Next is the meat of the problem: solving for the maze. Two things come to mind: I need to write a code that will "walk" through the maze and, prior to that, check its neighboring cells if it's even a walkable path.
 
-Since this is a 2D maze, checking for surrounding paths is also done in 2D (**x**'th row and **y**'th column). And knowing whether or not a path is walkable means
+Since this is a 2D maze, checking for surrounding paths is also done in 2D (**x**'th row and **y**'th column). And knowing whether or not a path is walkable means acceding to these rules:
 
 - path is not a wall
 - path is within the bounds of the maze
