@@ -93,4 +93,6 @@ The last part adds an item to the stack, where the tuple "(start, [start])" keep
             solutions.append(current_path)
             if len(solutions) >= 2:                          # stops code at 2 solutions as per the instructions
                 break
+
+    return solutions
 ```
