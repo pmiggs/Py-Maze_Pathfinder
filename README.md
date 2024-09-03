@@ -91,8 +91,25 @@ The last part adds an item to the stack, where the tuple "(start, [start])" keep
 
         if current_pos == end:                               # checks if end of the maze has been reached
             solutions.append(current_path)
-            if len(solutions) >= 2:                          # stops code at 2 solutions as per the instructions
+            if len(solutions) >= 2:                          # stops code at 2 solutions as per the problem statement
                 break
 
     return solutions
 ```
+Finally, all that's left is outputting the solutions. Currently, it's in 0s and 1s. This is the code to visualize them:
+
+```python
+def plot_maze_with_solutions(maze, solutions):
+    plt.imshow(maze)
+    for solution in solutions:
+        x_coords, y_coords = zip(*solution)
+        plt.plot(y_coords, x_coords, marker='o')
+    plt.show()
+```
+
+At last, the code is finished. The output, i.e. answer to the maze, looks like so:
+
+<img src="Solution_1.png" width="130" height="130">
+<img src="Solution_2.png" width="130" height="130">
+
+It was perhaps the most difficult program I handled back in college and there is definitely room for optimization in the code given its verbose nature. Nonetheless, I call this a definitive moment because I deferred from the application process because I paricipated in week-long UAAP competition in fencing. Thus, it became a great example of "right place, wrong time".
