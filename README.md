@@ -67,13 +67,17 @@ def walkability(maze, walkable, x, y):
 
 Next is the function that will generate our solutions. We expect an array output of these solutions, thus we need to intialize a list that will store the successful paths (the solutions themselves) and another list that will act as the stack for exploring paths (where newfound positions are pushed onto this stack).
 
-
-
 ```python
 def maze_solution(maze, start, end):
     solutions = []
     stack = []
     stack.append((start, [start]))
-# The last part adds an item to the stack, where the tuple (start, [start]) keeps track of both the current position and the path taken to reach it. As the algorithm continues, it will continue to add new positions and their corresponding paths to the stack as it explores the entire maze.
 ```
 
+The last part adds an item to the stack, where the tuple "(start, [start])" keeps track of both the current position and the path taken to reach it. As the algorithm continues, it will continue to add new positions and their corresponding paths to the stack as it explores the entire maze. Now it's time to write the part that explores the maze:
+
+```python
+    while len(stack) > 0:
+        current_pos, current_path = stack.pop() # takes the last position and its path from the stack
+        current_x, current_y = current_pos      # extracts the current x and y coordinates
+```
