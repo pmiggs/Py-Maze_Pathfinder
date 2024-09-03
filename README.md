@@ -77,7 +77,20 @@ def maze_solution(maze, start, end):
 The last part adds an item to the stack, where the tuple "(start, [start])" keeps track of both the current position and the path taken to reach it. As the algorithm continues, it will continue to add new positions and their corresponding paths to the stack as it explores the entire maze. Now it's time to write the part that explores the maze:
 
 ```python
-    while len(stack) > 0:                       # loop to continue exploring while there are still paths to explore
-        current_pos, current_path = stack.pop() # takes the last position and its path from the stack
-        current_x, current_y = current_pos      # extracts the current x and y coordinates
+    while len(stack) > 0:                                    # loop to continue exploring while there are still paths to explore
+        current_pos, current_path = stack.pop()              # takes the last position and its path from the stack
+        current_x, current_y = current_pos                   # extracts the current x and y coordinates
+
+        for direction in [(0, 1), (1, 0), (0, -1), (-1, 0)]: # explores all possible directions from current position
+            new_x = current_x + direction[0]
+            new_y = current_y + direction[1]
+            new_pos = (new_x, new_y)
+            if walkability(maze, np.array(current_path), new_x, new_y):
+                new_path = current_path + [new_position]     # adds new position and its path to the stack
+                stack.append((new_position, new_path))
+
+        if current_pos == end:                               # checks if end of the maze has been reached
+            solutions.append(current_path)
+            if len(solutions) >= 2:                          # stops code at 2 solutions as per the instructions
+                break
 ```
