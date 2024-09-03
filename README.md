@@ -77,7 +77,7 @@ def maze_solution(maze, start, end):
 The last part adds an item to the stack, where the tuple "(start, [start])" keeps track of both the current position and the path taken to reach it. As the algorithm continues, it will continue to add new positions and their corresponding paths to the stack as it explores the entire maze. Now it's time to write the part that explores the maze:
 
 ```python
-    while len(stack) > 0:
+    while len(stack) > 0:                       # loop to continue exploring while there are still paths to explore
         current_pos, current_path = stack.pop() # takes the last position and its path from the stack
         current_x, current_y = current_pos      # extracts the current x and y coordinates
 ```
