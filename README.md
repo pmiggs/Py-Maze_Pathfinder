@@ -112,4 +112,4 @@ At last, the code is finished. The output, i.e. answer to the maze, looks like s
 <img src="Solution_1.png" width="130" height="130">
 <img src="Solution_2.png" width="130" height="130">
 
-It was perhaps the most difficult program I handled back in college and there is definitely room for optimization in the code given its verbose nature. Nonetheless, I call this a definitive moment because I deferred from the application process because I paricipated in week-long UAAP competition in fencing. Thus, it became a great example of "right place, wrong time".
+It was perhaps the most difficult program I handled back in college and there is definitely room for optimization in the code given its verbose nature. Nonetheless, I call this a definitive moment because of the plot twist: I deferred from the application process. I prioritized participating in the week-long UAAP competition in fencing as one of the representatives of my university. Thus, it became a great example of a "right place, wrong time".
