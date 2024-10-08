@@ -24,19 +24,13 @@ import matplotlib.pyplot as plt
 First is to write a code that uploads the image into the program and convert it into binary. Thankfully, the image was given in black and white so there was no need to recolor or preprocess.
 
 ```python
-def load_maze(maze_file_path):
-    img = plt.imread(maze_file_path)
-    maze = np.zeros_like(img, dtype=int) # this initializes an empty array for our binary maze
-    for i in range(img.shape[0]):        # '0' = black color of the image
-        for j in range(img.shape[1]):    # '1' = white color of the image
-            if img[i,j] == 0:
-                maze[i,j] = 1            # this assigns all black as '1' for our array, i.e. walls
-            else:
-                maze[i,j] = 0            # this assigns all else (white) as '0', i.e. spaces
+def load_maze(image_path):
+    img = plt.imread(image_path)
+    maze = (img == 0).astype(int)
     return maze
 ```
 
-This is definitely a "brute force" way of coding, where I used nested loops to iterate through each pixel in the image. For each pixel, the code checks if the value is black or white. I then programmed it to follow the convention suggested in the problem where 1 will be the walls and 0 will be the path.
+For each pixel, the code checks if the value is black or white. I then programmed it to follow the convention suggested in the problem where 1 will be the walls and 0 will be the path.
 
 Calling out the maze function now, it looks like so (albeit truncated):
 
@@ -53,7 +47,7 @@ Since this is a 2D maze, checking for surrounding paths is also done in 2D (**x*
 Thus the code is written as follows:
 
 ```python
-def walkability(maze, walkable, x, y):
+def walkability(maze, visited, x, y):
     if maze[x, y] == 1:             # this checks if move hits a wall
         return False
     if x < 0 or x >= maze.shape[0]: # this checks if move is within vertical bounds
@@ -112,4 +106,4 @@ At last, the code is finished. The output, i.e. answer to the maze, looks like s
 <img src="Solution_1.png" width="130" height="130">
 <img src="Solution_2.png" width="130" height="130">
 
-This was perhaps the most difficult program I handled back in college and there is definitely room for optimization in the code given its verbose nature. Nonetheless, I call this a definitive moment because, plot twist, I actually deferred from the application process. I was given the opportunity to represent my university in a week-long sports competition (UAAP) in fencing and I prioritized it. Thus, this became a great example/reminder of a "right place, wrong time" moment.
+This was perhaps the most difficult program I handled back in college and there is definitely room for optimization in the code given its verbose nature. Nonetheless, I call this a definitive moment because, plot twist, I actually deferred from the application process. I was given the opportunity to represent my university in a week-long sports competition (UAAP) in fencing and I prioritized it. Thus, this became a stark example/reminder of a "right place but a wrong time".
