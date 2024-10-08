@@ -80,8 +80,8 @@ The last part adds an item to the stack, where the tuple "(start, [start])" keep
             new_y = current_y + direction[1]
             new_pos = (new_x, new_y)
             if walkability(maze, np.array(current_path), new_x, new_y):
-                new_path = current_path + [new_position]     # adds new position and its path to the stack
-                stack.append((new_position, new_path))
+                new_path = current_path + [new_pos]     # adds new position and its path to the stack
+                stack.append((new_pos, new_path))
 
         if current_pos == end:                               # checks if end of the maze has been reached
             solutions.append(current_path)
