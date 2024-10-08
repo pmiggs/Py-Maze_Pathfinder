@@ -93,7 +93,7 @@ The last part adds an item to the stack, where the tuple "(start, [start])" keep
 Finally, all that's left is outputting the solutions. Currently, it's in 0s and 1s. This is the code to visualize them:
 
 ```python
-def plot_maze_with_solutions(maze, solutions):
+def plot_maze(maze, solutions):
     plt.imshow(maze)
     for solution in solutions:
         x_coords, y_coords = zip(*solution)
